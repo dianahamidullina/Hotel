@@ -22,7 +22,7 @@ namespace Hotel
         {
             InitializeComponent();
             List<Clients> clients = new List<Clients>();
-            foreach (var line in File.ReadLines(@"HotelData.txt"))
+            foreach (var line in File.ReadLines(@".\..\..\HotelData.txt"))
             {
                 var array = line.Split('/');
                 clients.Add(new Clients(array[0], array[1], array[2], array[3], array[4]));
@@ -74,7 +74,7 @@ namespace Hotel
 
             dataGridView1.DataSource = dt;
 
-            string[] dataString = File.ReadAllLines(@"HotelData.txt");
+            string[] dataString = File.ReadAllLines(@".\..\..\HotelData.txt");
             string[] ss;
             for (int i = 0; i < dataString.Length; i++)
             {
@@ -112,7 +112,7 @@ namespace Hotel
 
                     dataGridView1.DataSource = dt;
 
-                    string[] dataString = File.ReadAllLines(@"HotelData.txt");
+                    string[] dataString = File.ReadAllLines(@".\..\..\HotelData.txt");
                     string[] ss;
                     for (int i = 0; i < dataString.Length; i++)
                     {
@@ -156,7 +156,7 @@ namespace Hotel
 
                     dataGridView1.DataSource = dt;
 
-                    string[] dataString = File.ReadAllLines(@"HotelData.txt");
+                    string[] dataString = File.ReadAllLines(@".\..\..\HotelData.txt");
                     string[] ss;
                     for (int i = 0; i < dataString.Length; i++)
                     {
@@ -200,7 +200,7 @@ namespace Hotel
 
                     dataGridView1.DataSource = dt;
 
-                    string[] dataString = File.ReadAllLines(@"HotelData.txt");
+                    string[] dataString = File.ReadAllLines(@".\..\..\HotelData.txt");
                     string[] ss;
                     for (int i = 0; i < dataString.Length; i++)
                     {
@@ -241,7 +241,7 @@ namespace Hotel
 
                     dataGridView1.DataSource = dt;
 
-                    string[] dataString = File.ReadAllLines(@"HotelData.txt");
+                    string[] dataString = File.ReadAllLines(@".\..\..\HotelData.txt");
                     string[] ss;
                     for (int i = 0; i < dataString.Length; i++)
                     {
@@ -275,7 +275,7 @@ namespace Hotel
 
             dataGridView1.DataSource = dt;
 
-            string[] dataString = File.ReadAllLines(@"HotelData.txt");
+            string[] dataString = File.ReadAllLines(@".\..\..\HotelData.txt");
             string[] ss;
             for (int i = 0; i < dataString.Length; i++)
             {
@@ -296,7 +296,7 @@ namespace Hotel
         {
             DataTable dt = new DataTable();
             List<Clients> clients = new List<Clients>();
-            foreach (var line in File.ReadLines(@"HotelData.txt"))
+            foreach (var line in File.ReadLines(@".\..\..\HotelData.txt"))
             {
                 var array = line.Split('/');
                 clients.Add(new Clients(array[0], array[1], array[2], array[3], array[4]));
