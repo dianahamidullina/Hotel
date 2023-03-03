@@ -306,7 +306,7 @@ namespace Hotel
 
               
                 
-             //   dataGridView1.Rows.Add(a.full_name, a.status, a.room, a.check, a.departure);
+             //  dataGridView1.Rows.Add(a.full_name, a.status, a.room, a.check, a.departure);
             }
             int number = dataGridView1.CurrentCell.RowIndex; 
             CardOfClient cardOfClient = new CardOfClient();
